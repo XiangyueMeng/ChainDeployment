@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose your configuration</title>
+</head>
+<body>
+<form action="/config/submit" method="post">
+    <h5>Set Configuration</h5>
+    <div>
+        <label>Please select net type:</label><br>
+        <input type="radio" name="net_type" value="mainnet"> Main Net<br>
+        <input type="radio" name="net_type" value="testnet"> Test Net<br>
+    </div>
+
+    <div>
+        <label>Please select DB Engine:</label><br>
+        <input type="radio" name="storage_db_engine" value="LEVELDB"> Level DB<br>
+        <input type="radio" name="storage_db_engine" value="ROCKSDB"> Rocks DB<br>
+    </div>
+
+    <div>
+        <label for="node_http_fullNodePort">Full Node Port </label>
+        <input type="text" id="node_http_fullNodePort" name="node_http_fullNodePort" tabindex="4">
+    </div>
+
+    <div id="buttons">
+        <input id="submit" type="submit" tabindex="5" value="submit">
+        <input id="reset" type="reset" tabindex="6" value="reset">
+    </div>
+</form>
+</body>
+</html>
