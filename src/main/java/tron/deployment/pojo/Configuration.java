@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Configuration implements Serializable {
     private static final long serialVersionUID = 1L;
+//    set to public to enable reflection of the field
     public String net_type;
     public String storage_db_engine;
     public int node_http_fullNodePort;

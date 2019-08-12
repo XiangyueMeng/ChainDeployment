@@ -18,6 +18,7 @@ import java.util.jar.JarFile;
 public class JarScanner {
     public static void main(String[] args){
         JarScanner jarScanner = new JarScanner();
+//        use FullNode.jar for testing
         List<Class<?>> classes = jarScanner.getClasses("FullNode.jar");
 
     }
@@ -58,7 +59,8 @@ public class JarScanner {
         System.out.println(total);
         return classes;
     }
-
+//  get fields according to annotation
+//    annotation type not decided yet
     List<String> getFields(List<Class<?>> classes){
         for(Class<?> c : classes){
 
